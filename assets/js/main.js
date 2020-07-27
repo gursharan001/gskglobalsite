@@ -192,16 +192,6 @@
     time: 1000
   });
 
-  // jQuery counter Simplexhub
-  var yrStart = 2000;
-  var yrEnd = Date().split(" ")[3];
-  document.getElementById("yrPassed").innerHTML = yrEnd - yrStart;
-
-  // jQuery counter Top rank
-  var yrStartT = 1990;
-  var yrEndT = Date().split(" ")[3];
-  document.getElementById("yrPassed1").innerHTML = yrEndT - yrStartT;
-
 
   // Testimonials carousel (uses the Owl Carousel library)
   // $(".testimonials-carousel").owlCarousel({
