@@ -192,6 +192,23 @@
     time: 1000
   });
 
+  // jQuery counter Simplexhub
+  var yrStart = 2000;
+  var yrEnd = Date().split(" ")[3];
+  if (document.querySelector(".yrPassed")) {
+    var yrCalculationS = document.querySelectorAll(".yrPassed")
+    yrCalculationS[0].innerHTML = yrEnd - yrStart;
+    yrCalculationS[1].innerHTML = yrEnd - yrStart;
+  }
+
+  // jQuery counter Top rank
+  var yrStartT = 1990;
+  var yrEndT = Date().split(" ")[3];
+  if (document.querySelector(".yrPassed1")) {
+    var yrCalculationT = document.querySelectorAll(".yrPassed1");
+    yrCalculationT[0].innerHTML = yrEndT - yrStartT;
+    yrCalculationT[1].innerHTML = yrEndT - yrStartT;
+  }
 
   // Testimonials carousel (uses the Owl Carousel library)
   // $(".testimonials-carousel").owlCarousel({
