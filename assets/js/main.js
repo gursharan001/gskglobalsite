@@ -192,6 +192,22 @@
     time: 1000
   });
 
+  var yrEnd = Date().split(" ")[3];
+  // jQuery counter Software Development
+  var yrStart = 2000;
+  if (document.querySelector(".yrPassed")) {
+    var yrCalculationS = document.querySelectorAll(".yrPassed")
+    yrCalculationS[0].innerHTML = yrEnd - yrStart;
+    yrCalculationS[1].innerHTML = yrEnd - yrStart;
+  }
+
+  // jQuery counter Trading
+  var yrStartT = 1990;
+  if (document.querySelector(".yrPassedT")) {
+    var yrCalculationT = document.querySelectorAll(".yrPassedT");
+    yrCalculationT[0].innerHTML = yrEnd - yrStartT;
+    yrCalculationT[1].innerHTML = yrEnd - yrStartT;
+  }
 
   // Testimonials carousel (uses the Owl Carousel library)
   // $(".testimonials-carousel").owlCarousel({
